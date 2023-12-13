@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-13T18:03:12 IST" name="Default suite" finished-at="2023-12-13T18:03:18 IST" duration-ms="5625">
+    <groups>
+    </groups>
+    <test started-at="2023-12-13T18:03:12 IST" name="Default test" finished-at="2023-12-13T18:03:18 IST" duration-ms="5625">
+      <class name="com.reqres_CCL.testCaseClass.loginUserTest">
+        <test-method is-config="true" signature="before()[pri:0, instance:com.reqres_CCL.testCaseClass.loginUserTest@2d901eb0]" started-at="2023-12-13T18:03:12 IST" name="before" finished-at="2023-12-13T18:03:13 IST" duration-ms="539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="testLoginUserInvalidEmail()[pri:0, instance:com.reqres_CCL.testCaseClass.loginUserTest@2d901eb0]" started-at="2023-12-13T18:03:13 IST" name="testLoginUserInvalidEmail" finished-at="2023-12-13T18:03:15 IST" duration-ms="2513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUserInvalidEmail -->
+        <test-method signature="testLoginUserInvalidPassword()[pri:0, instance:com.reqres_CCL.testCaseClass.loginUserTest@2d901eb0]" started-at="2023-12-13T18:03:15 IST" name="testLoginUserInvalidPassword" finished-at="2023-12-13T18:03:16 IST" duration-ms="546" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.reqres_CCL.testCaseClass.loginUserTest.testLoginUserInvalidPassword(loginUserTest.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUserInvalidPassword -->
+        <test-method signature="testLoginUserMissingEmail()[pri:0, instance:com.reqres_CCL.testCaseClass.loginUserTest@2d901eb0]" started-at="2023-12-13T18:03:16 IST" name="testLoginUserMissingEmail" finished-at="2023-12-13T18:03:17 IST" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUserMissingEmail -->
+        <test-method signature="testLoginUserMissingPassword()[pri:0, instance:com.reqres_CCL.testCaseClass.loginUserTest@2d901eb0]" started-at="2023-12-13T18:03:17 IST" name="testLoginUserMissingPassword" finished-at="2023-12-13T18:03:17 IST" duration-ms="610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUserMissingPassword -->
+        <test-method signature="testLoginUserSuccess()[pri:0, instance:com.reqres_CCL.testCaseClass.loginUserTest@2d901eb0]" started-at="2023-12-13T18:03:17 IST" name="testLoginUserSuccess" finished-at="2023-12-13T18:03:18 IST" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginUserSuccess -->
+      </class> <!-- com.reqres_CCL.testCaseClass.loginUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
